@@ -1,0 +1,4 @@
+neo-6m.c:50:7:GPS_nmea_to_dec	32	static
+neo-6m.c:63:5:nmea0183_checksum	24	static
+neo-6m.c:76:6:gpsInit	16	static
+neo-6m.c:91:6:gpsGetData	40	static

@@ -1,0 +1,11 @@
+main.c:62:6:HAL_UART_RxCpltCallback	16	static
+main.c:69:7:GPS_nmea_to_dec	32	static
+main.c:79:5:nmea0183_checksum	24	static
+main.c:93:6:serialPrint	16	static
+main.c:115:5:main	832	static
+main.c:302:6:SystemClock_Config	88	static
+main.c:347:13:MX_USART1_UART_Init	8	static
+main.c:380:13:MX_USART2_UART_Init	8	static
+main.c:411:13:MX_DMA_Init	16	static
+main.c:429:13:MX_GPIO_Init	16	static
+main.c:445:6:Error_Handler	4	static,ignoring_inline_asm
