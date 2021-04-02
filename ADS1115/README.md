@@ -7,12 +7,12 @@ Don't forget to check datasheet of ADS111x for detailed information: https://www
 
 # [Türkçe/Turkish] Kullanım Talimatı
 
- * 1) Adress değişkenini güncelleyin:
+ * Adress değişkenini güncelleyin:
  	ADDR PIN --> GND ise 1001000
  	ADDR PIN --> VDD ise 1001001
  	ADDR PIN --> SDA ise 1001010
  	ADDR PIN --> SCL ise 1001000
 
- * 2) ADS1115_Init(...) fonks. ile I2C peripheral ve PGA ile Data Rate ayarlarını yapın. (HAL_OK veya HAL_ERROR)
- * 3) ADS1115_readSingleEnded(...) fonksiyonu ile single-shot okuma yapacağınız portu seçin ve float tipinde değişkeninizin adresini gönderin.
- * 4) Üçüncü adımdan sonra değişkeninizin içerisinde uygun katsayıyla çarpılmış gerilim değeri saklanacaktır.
+ * ADS1115_Init(...) fonks. ile I2C peripheral ve PGA ile Data Rate ayarlarını yapın. (HAL_OK veya HAL_ERROR)
+ * ADS1115_readSingleEnded(...) fonksiyonu ile single-shot okuma yapacağınız portu seçin ve float tipinde değişkeninizin adresini gönderin.
+ * Üçüncü adımdan sonra değişkeninizin içerisinde uygun katsayıyla çarpılmış gerilim değeri saklanacaktır.
