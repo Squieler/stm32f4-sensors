@@ -4,6 +4,7 @@ A simple C library (STM32 HAL) for single-ended single-shot ADC measurments with
 This library includes several configurations such as PGA and data rate of ADS1115 and tested on STM32F411RE. Example project available.
 
 Don't forget to check datasheet of ADS111x for detailed information: https://www.ti.com/lit/gpn/ADS1113
+
 Don't forget to check ads1115.h file.
 
 # [Türkçe/Turkish] Kullanım Talimatı
