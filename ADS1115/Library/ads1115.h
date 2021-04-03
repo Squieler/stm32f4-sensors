@@ -1,5 +1,5 @@
 /*
- * Library Name: 	ADS1115 STM32 Single-Ended, Single-Shot, PGA & Data Rate Enabled ADC Library
+ * Library Name: 	ADS1115 STM32 Single-Ended, Single-Shot, PGA & Data Rate Enabled HAL Library
  * Written By:		Ahmet Batuhan Günaltay
  * Date Written:	02/04/2021 (DD/MM/YYYY)
  * Last Modified:	03/04/2021 (DD/MM/YYYY)
