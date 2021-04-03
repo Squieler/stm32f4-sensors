@@ -48,7 +48,7 @@ And,
  	1) ADDR PIN --> GND ise 1001000
  	2) ADDR PIN --> VDD ise 1001001
  	3) ADDR PIN --> SDA ise 1001010
- 	4) ADDR PIN --> SCL ise 1001000
+ 	4) ADDR PIN --> SCL ise 1001011
 
  * ADS1115_Init(...) fonks. ile I2C peripheral ve PGA ile Data Rate ayarlarını yapın. (HAL_OK veya HAL_ERROR)
  * ADS1115_readSingleEnded(...) fonksiyonu ile single-shot okuma yapacağınız portu seçin ve float tipinde değişkeninizin adresini gönderin. (HAL_OK veya HAL_ERROR)
