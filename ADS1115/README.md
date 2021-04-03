@@ -35,9 +35,9 @@ And,
   while (1)
   {
 
-	  if(ADS1115_readSingleEnded(ADS1115_MUX_AIN0, &voltageRead) == HAL_OK){
-		  //Voltage successfully read.
-	  }
+	if(ADS1115_readSingleEnded(ADS1115_MUX_AIN0, &voltageRead) == HAL_OK){
+		//Voltage successfully read.
+	 }
 
  /* USER CODE END WHILE */
 ```
