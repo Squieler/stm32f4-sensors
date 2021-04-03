@@ -1,4 +1,4 @@
-# STM32 - ADS1115 Single-Ended, Single-Shot, PGA & Data Rate Enabled ADC Library
+# STM32 - ADS1115 Single-Ended, Single-Shot, PGA & Data Rate Enabled HAL Library
 A simple C library (STM32 HAL) for single-ended single-shot ADC measurments with ADS1115 module. (Tested on STM32F411RE)
 
 This library includes several configurations such as PGA and data rate of ADS1115 and tested on STM32F411RE. Example project available.
