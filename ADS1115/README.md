@@ -28,7 +28,7 @@ This library includes several configurations such as PGA and data rate of ADS111
 
 ```
 ...
-```
+```c
  /* USER CODE BEGIN WHILE */
   while (1)
   {
