@@ -9,6 +9,8 @@ This library includes several configurations such as PGA and data rate of ADS111
 * Don't forget to check ads1115.h file.
 
 ## Example Usage
+Configure an I2C peripheral on CubeMX.
+
 ```c
 
 /* USER CODE BEGIN 2 */
@@ -27,7 +29,7 @@ This library includes several configurations such as PGA and data rate of ADS111
 /* USER CODE END 2 */
 
 ```
-...
+And,
 ```c
  /* USER CODE BEGIN WHILE */
   while (1)
