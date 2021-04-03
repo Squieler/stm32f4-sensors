@@ -2,18 +2,25 @@
  * Library Name: 	ADS1115 STM32 Single-Ended, Single-Shot, PGA & Data Rate Enabled ADC Library
  * Written By:		Ahmet Batuhan Günaltay
  * Date Written:	02/04/2021 (DD/MM/YYYY)
- * Last Modified:	02/04/2021 (DD/MM/YYYY)
+ * Last Modified:	03/04/2021 (DD/MM/YYYY)
  * Description:		STM32F4 HAL-Based ADS1115 Library
  * References:
  * 	- https://www.ti.com/lit/gpn/ADS1113 [Datasheet]
  *
  * Copyright (C) 2021 - Ahmet Batuhan Günaltay
  *
-	 This is a free software under the GNU license, you can redistribute it and/or modify it under the terms
-	 of the GNU General Public Licenseversion 3 as published by the Free Software Foundation.
+	This software library is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-	 This software library is shared with puplic for educational purposes, without WARRANTY and Author is not liable for any damages caused directly
-	 or indirectly by this software, read more about this on the GNU General Public License.
+    This software library is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
  *
  *  */
 
@@ -97,16 +104,14 @@ HAL_StatusTypeDef ADS1115_Init(I2C_HandleTypeDef *handler, uint16_t setDataRate,
 
 HAL_StatusTypeDef ADS1115_readSingleEnded(uint16_t muxPort, float *voltage) {
 
-	ADS1115_config[0] = (ADS1115_OS | muxPort | ADS1115_pga | ADS1115_MODE) >> 8;
+	ADS1115_config[0] = ADS1115_OS | muxPort | ADS1115_pga | ADS1115_MODE;
 	ADS1115_config[1] = ADS1115_dataRate | ADS1115_COMP_MODE | ADS1115_COMP_POL | ADS1115_COMP_LAT| ADS1115_COMP_QUE;
 
 	if(HAL_I2C_Mem_Write(&ADS1115_I2C_Handler, (uint16_t) (ADS1115_devAddress << 1), ADS1115_CONFIG_REG, 1, ADS1115_config, 2, ADS1115_TIMEOUT) == HAL_OK){
 
-		HAL_Delay(0.010);
-
 		if(HAL_I2C_Mem_Read(&ADS1115_I2C_Handler, (uint16_t) ((ADS1115_devAddress << 1) | 0x1), ADS1115_CONVER_REG, 1, ADS1115_rawValue, 2, ADS1115_TIMEOUT) == HAL_OK){
 
-			*voltage = (float) (((ADS1115_rawValue[0] << 8) | ADS1115_rawValue[1]) * ADS1115_voltCoef);
+			*voltage = (float) (((int16_t) (ADS1115_rawValue[0] << 8) | ADS1115_rawValue[1]) * ADS1115_voltCoef);
 			return HAL_OK;
 
 		}
