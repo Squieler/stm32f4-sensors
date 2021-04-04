@@ -239,7 +239,7 @@ int main(void)
 						/* Gelen, anlamlandırılmış veriyi bilgisayara anlatmak için. */
 						serialPrint("Lat.: %f, Lon.: %f, Speed (knot): %f, UTC: %f, Date: %d\r\n", gpsData.dec_latitude, gpsData.dec_longitude, gpsData.speed_k, gpsData.utc_time, gpsData.date);
 
-					} else if((strstr(nmeaStr, "$GNGLL") != 0) && strlen(nmeaStr) > 49 && strstr(nmeaStr, "*") != 0) {
+					} else if((strstr(nmeaStr, "$GPGLL") != 0) && strlen(nmeaStr) > 49 && strstr(nmeaStr, "*") != 0) {
 
 						/* NMEA checksum */
 						rawSum = strstr(nmeaStr, "*"); // * ile başlyan checksum verisi depolanır.
