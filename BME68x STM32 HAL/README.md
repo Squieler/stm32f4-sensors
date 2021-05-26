@@ -47,15 +47,15 @@ data.iaq_score
 ```
 
 ## Licensing
- * Library Name: 	BME68x (I2C) - STM32 HAL and BME68x API Based Library
- * Written By:		Ahmet Batuhan Günaltay (Great thanks to David Bird for IAQ calculation method and functions.)
- * Date Written:	26/05/2021 (DD/MM/YYYY)
- * Last Modified:	26/05/2021 (DD/MM/YYYY)
- * Description:		This library measures temperature, humidity, pressure and IAQ with BME680x (I2C) sensors based on STM32 HAL and BME68x API. For more information about the IAQ calculation check: https://github.com/G6EJD/BME680-Example
- * References: https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bme680-ds001.pdf [Datasheet]
+Library Name: 	BME68x (I2C) - STM32 HAL and BME68x API Based Library
+Written By:		Ahmet Batuhan Günaltay (Great thanks to David Bird for IAQ calculation method and functions.)
+Date Written:	26/05/2021 (DD/MM/YYYY)
+Last Modified:	26/05/2021 (DD/MM/YYYY)
+Description:	This library measures temperature, humidity, pressure and IAQ with BME680x (I2C) sensors based on STM32 HAL and BME68x API. For more information about the IAQ calculation check: https://github.com/G6EJD/BME680-Example
+References: https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bme680-ds001.pdf [Datasheet]
  
- * Copyright (C) 2021 - Ahmet Batuhan Günaltay
- * (IAQ calculation substantial portion, the ideas and concepts is Copyright (c) David Bird 2018)
+Copyright (C) 2021 - Ahmet Batuhan Günaltay
+(IAQ calculation substantial portion, the ideas and concepts is Copyright (c) David Bird 2018)
  
 	This software library is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
