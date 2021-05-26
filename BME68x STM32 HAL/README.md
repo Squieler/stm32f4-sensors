@@ -53,8 +53,7 @@ data.iaq_score
  * Last Modified:	26/05/2021 (DD/MM/YYYY)
  * Description:		This library measures temperature, humidity, pressure and IAQ with BME680x (I2C) sensors based on STM32 HAL
  * 					and BME68x API. For more information about the IAQ calculation check: https://github.com/G6EJD/BME680-Example
- * References:
- * 	- https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bme680-ds001.pdf [Datasheet]
+ * References: https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bme680-ds001.pdf [Datasheet]
  *
  * Copyright (C) 2021 - Ahmet Batuhan Günaltay
  * (IAQ calculation substantial portion, the ideas and concepts is Copyright (c) David Bird 2018)
