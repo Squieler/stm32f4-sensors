@@ -1,0 +1,10 @@
+bme68x_necessary_functions.c:57:8:bme68x_start	16	static
+bme68x_necessary_functions.c:92:8:bme68x_single_measure	16	static
+bme68x_necessary_functions.c:109:22:bme68x_i2c_write	48	static
+bme68x_necessary_functions.c:121:22:bme68x_i2c_read	48	static
+bme68x_necessary_functions.c:133:6:bme68x_delay_us	16	static
+bme68x_necessary_functions.c:138:8:bme68x_interface_init	24	static
+bme68x_necessary_functions.c:192:6:bme68x_GetGasReference	16	static
+bme68x_necessary_functions.c:205:8:bme68x_GetHumidityScore	24	static
+bme68x_necessary_functions.c:222:8:bme68x_GetGasScore	32	static
+bme68x_necessary_functions.c:235:7:bme68x_iaq	24	static

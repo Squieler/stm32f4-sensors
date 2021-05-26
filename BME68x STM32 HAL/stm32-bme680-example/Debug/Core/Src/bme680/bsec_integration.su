@@ -1,0 +1,6 @@
+bsec_integration.c:111:30:bme680_bsec_update_subscription	152	static
+bsec_integration.c:159:20:bsec_iot_init	2704	static
+bsec_integration.c:235:13:bme680_bsec_trigger_measurement	24	static
+bsec_integration.c:295:13:bme680_bsec_read_data	32	static
+bsec_integration.c:376:13:bme680_bsec_process_data	344	static
+bsec_integration.c:491:6:bsec_iot_loop	2440	static
