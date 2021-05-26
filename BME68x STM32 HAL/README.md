@@ -13,7 +13,7 @@ This library measures temperature, humidity, pressure and IAQ with BME680x (I2C)
 ```c
 /* USER CODE BEGIN Includes */
 
-#include <bme680/bme68x_necessary_functions.h>-
+#include <bme680/bme68x_necessary_functions.h>
 
 /* USER CODE END Includes */
 ```
